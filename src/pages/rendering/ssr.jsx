@@ -13,8 +13,10 @@ export default function SSR({ data }) {
                 <meta name="description" content="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, animi?"></meta>
             </Head>
             <main className="flex min-h-screen flex-col p-24">
-                <h1 className={`mb-3 text-2xl font-semibold`}> Client Side Rendering </h1>
+                <h1 className={`mb-3 text-2xl font-semibold`}> Server Side Rendering </h1>
                 <h2 className={`mb-3 text-2xl font-semibold`}> Pokemon Ditto </h2>
+
+
 
                 {data &&
                     <table>
@@ -53,6 +55,14 @@ export default function SSR({ data }) {
                         </tbody>
                     </table>
                 }
+
+                <h2 className={`mb-3 text-2xl font-semibold`}> Sample image using next/image </h2>
+
+                <Image
+                    src={`https://2.img-dpreview.com/files/p/E~C1000x0S4000x4000T1200x1200~articles/3925134721/0266554465.jpeg`}
+                    width={'200'}
+                    height={'200'}
+                />
             </main>
         </>
     );

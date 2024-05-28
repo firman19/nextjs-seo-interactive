@@ -18,8 +18,8 @@ export default function FormPage() {
     } = useForm();
 
     // const msg = "success";
-    // const msg = "error";
-    const msg = "long_error";
+    const msg = "error";
+    // const msg = "long_error";
 
     function customSubmit(data) {
         setLoading(true);

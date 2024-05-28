@@ -13,7 +13,7 @@ export default function SSG({ data }) {
                 <meta name="description" content="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, animi?"></meta>
             </Head>
             <main className="flex min-h-screen flex-col p-24">
-                <h1 className={`mb-3 text-2xl font-semibold`}> Client Side Rendering </h1>
+                <h1 className={`mb-3 text-2xl font-semibold`}> Static Site Generation </h1>
                 <h2 className={`mb-3 text-2xl font-semibold`}> Pokemon Ditto </h2>
 
                 {data &&

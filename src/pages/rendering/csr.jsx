@@ -5,11 +5,12 @@ import Head from 'next/head';
 
 export default function CSR() {
     const [data, setData] = useState(null);
-    const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        fetchData();
+        setLoading(true)
+        setTimeout(fetchData, 2000);
     }, [])
 
     const fetchData = async () => {
@@ -38,7 +39,6 @@ export default function CSR() {
                 <h1 className={`mb-3 text-2xl font-semibold`}> Client Side Rendering </h1>
                 <h2 className={`mb-3 text-2xl font-semibold`}> Pokemon Ditto </h2>
 
-                <Skeleton count={5} />
                 {loading &&
                     <Skeleton count={5} />
                 }
